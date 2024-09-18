@@ -20,7 +20,7 @@ Ce dépot contient les corrections des labos du groupe 40, n'hésitez pas à le 
 - Semaine 15: à venir
 
 ## Me rejoindre:
-Si vous avez des questions sur la matière vu en classe ou dans les labos, je vous recommande de poser vos questions dans le Mattermost du cours. Si vous avez besoin d'une aide personnalisé vous pouvez me rejoindre par [courriel](mailto:osorio_arancibia.aaron@courrier.uqam.ca?subject=Aide%20labo%20IMGL7030)  .
+Si vous avez des questions sur la matière vu en classe ou dans les labos, je vous recommande de poser vos questions dans le Mattermost du cours. Si vous avez besoin d'une aide personnalisé vous pouvez me rejoindre par [courriel](mailto:osorio_arancibia.aaron@courrier.uqam.ca?subject=Aide%20labo%20INF3190)  .
 
 ## Liens utiles:
 - [Validateur du W3C pour le html](https://validator.w3.org/)
