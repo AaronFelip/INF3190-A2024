@@ -7,8 +7,8 @@ Ce dépot contient les corrections des labos du groupe 40, n'hésitez pas à le 
 - Semaine 2: [Labo1 - Environnement de travail](./LABO1)
 - Semaine 3: [Labo2 - HTML de base](./LABO2)
 - Semaine 4: [Labo3 - CSS de base](./LABO3)
-- Semaine 5: Pas de laboratoire cette semaine
-- Semaine 6: à venir
+- Semaine 5: [Labo4 - CSS partie 2](./LABO4)
+- Semaine 6: [Labo5 - Formulaire](./LABO5)
 - Semaine 7: à venir
 - Semaine 8: à venir
 - Semaine 9: à venir
