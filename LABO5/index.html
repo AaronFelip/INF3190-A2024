@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="laboratoire, inf3190, UQAM">
+    <meta name="description" content="Devenez bénévole pour notre organisme!">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Formulaire de Bénévolat</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+<main>
+    <div>
+        <header>
+            <div class="head">
+                <h1>Offrir du temps comme bénévole</h1>
+                <p>Merci de votre intérêt pour le bénévolat auprès de notre organisme à but non lucratif.
+                    Veuillez remplir le formulaire ci-dessous :</p>
+            </div>
+        </header>
+    </div>
+    <div>
+        <form>
+            <label for="nom">Nom :</label><br>
+            <input type="text" id="nom" name="nom" required><br><br>
+
+            <label for="prenom">Prénom :</label><br>
+            <input type="text" id="prenom" name="prenom" required><br><br>
+
+            <label for="email">Adresse e-mail :</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="telephone">Téléphone :</label><br>
+            <input type="tel" id="telephone" name="telephone"><br><br>
+
+            <label for="interets">Qu'est-ce qui vous motives à faire du bénévolat? </label><br>
+            <textarea id="interets" name="interets" rows="4" cols="50"></textarea><br><br>
+
+            <label for="disponibilite">Disponibilité :</label><br>
+            <select id="disponibilite" name="disponibilite">
+                <option value="weekends">Weekends</option>
+                <option value="soirees">Soirées en semaine</option>
+                <option value="jours">Journées en semaine</option>
+            </select><br><br>
+
+            <input type="submit" value="Soumettre">
+        </form>
+    </div>
+</main>
+
+</body>
+</html>
