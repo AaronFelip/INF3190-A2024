@@ -5,48 +5,90 @@
     <meta name="keywords" content="laboratoire, inf3190, UQAM">
     <meta name="description" content="Devenez bénévole pour notre organisme!">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="author" content="Aaron Osorio">
     <title>Formulaire de Bénévolat</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
-<main>
     <div>
         <header>
             <div class="head">
-                <h1>Offrir du temps comme bénévole</h1>
-                <p>Merci de votre intérêt pour le bénévolat auprès de notre organisme à but non lucratif.
-                    Veuillez remplir le formulaire ci-dessous :</p>
+                <h1>Formulaire</h1>
+                <p>Le contenu d'un paragraphe</p>
             </div>
         </header>
     </div>
     <div>
-        <form>
-            <label for="nom">Nom :</label><br>
-            <input type="text" id="nom" name="nom" required><br><br>
+        <form action="#" method="POST">
+            <h3>Informations personnelles</h3>
+            <label for="nom">Nom : </label>
+            <input type="text" id="nom" name="nom" maxlength="40" placeholder="Samsung, Iphone, Nintendo..." required>
+            <label for="prenom">Prénom : </label>
+            <input type="text" id="prenom" name="prenom" maxlength="50" placeholder="Aaron" required>
+            <label for="age">Age : </label>
+            <input type="text" id="age" name="age" maxlength="2" placeholder="24" required>
+            <br><br>
 
-            <label for="prenom">Prénom :</label><br>
-            <input type="text" id="prenom" name="prenom" required><br><br>
+            <h3>Diplomation</h3>
+            <label for="annee-diplomation">Année de diplomation :</label>
+            <input type="text" id="annee-diplomation"
+                   name="annee-diplomation"
+            maxlength="4" placeholder="1999">
 
-            <label for="email">Adresse e-mail :</label><br>
-            <input type="email" id="email" name="email" required><br><br>
+            <label for="universites">Choisir université :</label>
+            <select id="universites" name="universites">
+                <option value="UQAM">UQAM</option>
+                <option value="UDEM">UDEM</option>
+                <option value="McGill">McGill</option>
+            </select>
+            <label for="nom-programme">Nom du programme : </label>
+            <input type="text" id="nom-programme" name="nom-programme" required>
+            <br><br>
+            <h3>Type d'admission</h3>
+            <div class="interest-options">
+                <div>
+                    <input type="radio" id="membre-reg" name="admission" value="Membre régulier">
+                    <label for="membre-reg">Membre régulier</label>
+                </div>
+                <div>
+                    <input type="radio" id="membre-or" name="admission" value="Membre or">
+                    <label for="membre-or">Membre or</label>
+                </div>
+                <div>
+                    <input type="radio" id="membre-observateur" name="admission" value="Membre observateur">
+                    <label for="membre-observateur">Membre observateur</label>
+                </div>
+                <div>
+                    <input type="radio" id="membre-junior" name="admission" value="Membre junior">
+                    <label for="membre-junior">Membre junior</label>
+                </div>
+            </div>
 
-            <label for="telephone">Téléphone :</label><br>
-            <input type="tel" id="telephone" name="telephone"><br><br>
 
-            <label for="interets">Qu'est-ce qui vous motives à faire du bénévolat? </label><br>
-            <textarea id="interets" name="interets" rows="4" cols="50"></textarea><br><br>
-
-            <label for="disponibilite">Disponibilité :</label><br>
-            <select id="disponibilite" name="disponibilite">
-                <option value="weekends">Weekends</option>
-                <option value="soirees">Soirées en semaine</option>
-                <option value="jours">Journées en semaine</option>
-            </select><br><br>
+            <br><br>
+            <div>
+                <label for="texte">Votre texte</label>
+                <textarea id="texte" name="texte" rows="4" cols="50"></textarea><br><br>
+            </div>
 
             <input type="submit" value="Soumettre">
+
+
+
         </form>
     </div>
-</main>
-
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
