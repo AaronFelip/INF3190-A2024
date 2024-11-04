@@ -1,0 +1,141 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CodeCompagnons, l'association des informaticiennes et informaticiens du Québec</title>
+
+  <!-- font-awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+  <!-- Bootstrap-5 -->
+  <link rel="stylesheet" href="static/css/bootstrap.min.css">
+
+  <link rel="stylesheet" href="static/css/style.css">
+
+
+</head>
+<body>
+<main>
+  <div class="logo">
+    <div class="logo-text">
+      CodeCompagnons
+    </div>
+  </div>
+  <div class="container">
+    <div class="wrapper">
+      <div class="row">
+        <div class="c-order tab-sm-100 col-md-6">
+
+          <div class="left">
+            <article class="side-text">
+              <h2>Forger l'avenir numérique!</h2>
+              <p>Notre mission est de promouvoir l'innovation, le partage de
+                connaissances et la collaboration au sein de l'univers infini
+                de la technologie.
+              </p>
+            </article>
+            <div class="left-img">
+              <img src="static/images/background-animation-2.gif" alt="Code Companion">
+            </div>
+            <ul class="links">
+              <li><a href="#">Termes et conditions</a></li>
+              <li><a href="#">Politique de confidentialité</a></li>
+              <li><a href="#">À propos de nous</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="tab-sm-100 offset-md-1 col-md-5">
+          <div class="right">
+
+            <!-- form -->
+            <form id="steps" method="post" enctype="multipart/form-data">
+
+              <div id="step1" class="form-inner lightSpeedIn">
+                <div class="input-field">
+                  <label><i class="fa-regular fa-user"></i>Votre nom <span>*</span></label>
+                  <input required type="text" name="name" id="mail-name" placeholder="Écrivez votre nom comlplet">
+                  <span></span>
+                </div>
+                <div class="input-field">
+                  <label for="company"><i class="fa-regular fa-paper-plane"></i>Nom de la compagnie <span>*</span></label>
+                  <input required type="text" name="company" id="company" placeholder="Le nom de votre compagnie">
+                  <span></span>
+                </div>
+                <div class="input-field">
+                  <label for="phone"><i class="fa-solid fa-phone"></i>Téléphone <span>*</span></label>
+                  <input required type="text" name="phone" id="phone" placeholder="514-555-6666">
+                  <span></span>
+                </div>
+                <div class="input-field">
+                  <label><i class="fa-regular fa-envelope"></i>Courriel <span>*</span></label>
+                  <input required type="text" name="mail" id="mail-email" placeholder="votre@compagnie.com">
+                  <span></span>
+                </div>
+                <div class="input-field">
+                  <label for="message"><i class="fa-solid fa-message"></i>Dites-nous comment nous pouvons vous aider <span>*</span></label>
+                  <input required type="text" name="message" id="message" placeholder="Écrivez comment nous pouvons aider votre entreprise">
+                  <span></span>
+                </div>
+                <div class="check-field">
+                  <label><i class="fa-regular fa-user"></i>Quels type de service offre votre entreprise<span>*</span></label>
+                  <div class="row">
+                    <div class="tab-100 col-md-6">
+                      <div class="check-single">
+                        <input type="checkbox" name="service" value="paid media" checked>
+                        <label>Réseau sociaux</label>
+                      </div>
+                      <div class="check-single">
+                        <input type="checkbox" name="service" value="Digital experience">
+                        <label>Marekting traditionel</label>
+                      </div>
+                      <div class="check-single">
+                        <input type="checkbox" name="service" value="Email">
+                        <label>Consultation</label>
+                      </div>
+                    </div>
+                    <div class="tab-100 col-md-6">
+                      <div class="check-single">
+                        <input type="checkbox" name="service" value="Content Creation">
+                        <label>Création de contenu</label>
+                      </div>
+                      <div class="check-single">
+                        <input type="checkbox" name="service" value="Strategy & Consulting">
+                        <label>Gestion de projet/label>
+                      </div>
+                      <div class="check-single">
+                        <input type="checkbox" name="service" value="Other">
+                        <label>Autres</label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="submit">
+                <button type="button" id="sub">Envoyer la demande d'admission<span><i class="fa-solid fa-thumbs-up"></i></span></button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<div id="error">
+</div>
+
+
+<!-- Bootstrap-5 -->
+<script src="static/js/bootstrap.min.js"></script>
+
+<!-- Jquery -->
+<script src="static/js/jquery-3.6.1.min.js"></script>
+
+<!-- Custom js -->
+<script src="static/js/script.js"></script>
+
+</body>
+</html>

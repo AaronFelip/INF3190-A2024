@@ -1,0 +1,736 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,500;1,600;1,700;1,800;1,900&family=Oswald:wght@200;300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* variables */
+:root
+{
+    /* --secondary-color: rgb(247, 147, 58); */
+    --field-text-color: rgb(26, 25, 25);
+    --field-place-color: rgb(159, 159, 159);
+    --text-color: rgb(40, 40, 41);
+    --primary-color: rgb(0, 143, 156);
+    --field-color: rgb(250, 228, 202);
+
+}
+body
+{
+    font-family: "Jost";
+    width: 100%;
+    position: relative;
+    min-height: 100vh;
+
+
+
+}
+
+main
+{
+    padding: 45px 80px;
+    position: relative;
+    height: auto;
+    background-color: rgb(255 255 255);
+    min-height: 100vh;
+}
+
+.logo
+{
+    display: flex;
+    align-items: center;
+    height: auto;
+    position: relative;
+    z-index: 10;
+}
+.logo-icon
+{
+    width: auto;
+}
+.logo-icon img
+{
+    width: 100%;
+}
+.logo-text
+{
+    font-size: 37px;
+    color: var(--field-text-color);
+    font-weight: bold;
+    margin-left: 3px;
+}
+.left
+{
+    margin-top: 100px;
+}
+.left, .right
+{
+    position: relative;
+    z-index: 1000;
+}
+.left-img
+{
+    margin-top: 15px;
+    width: 100%;
+    height: auto;
+}
+.left-img img
+{
+    width: 100%;
+    height: auto;
+}
+
+.wrapper
+{
+    height: 100%;
+    display: grid;
+    align-content: center;
+    min-height: 500px;
+}
+.side-text h2
+{
+    font-size: 65px;
+    color: var(--field-text-color);
+    font-weight: bold;
+    line-height: 1.2;
+}
+.side-text p
+{
+    font-size: 27px;
+    color: var(--field-text-color);
+    font-weight: bold;
+    line-height: 40px;
+}
+.side-text p span
+{
+    position: relative;
+    display: inline-block;
+    line-height: 1.3;
+}
+.side-text p span::after
+{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: var(--secondary-color);
+    border-radius: 50px;
+}
+.links
+{
+    list-style: none;
+    padding: 0;
+    margin-top: 70px;
+}
+.links a
+{
+    text-decoration: none;
+    margin-right: 40px;
+}
+.links li
+{
+    display: inline-block;
+    margin-bottom: 10px;
+    color: var(--text-color);
+    font-weight: 500;
+    font-size: 17px;
+    font-weight: 500;
+    color: var(--text-color);
+
+}
+
+form
+{
+    overflow: hidden;
+}
+
+.input-field
+{
+    width: 100%;
+    padding-bottom: 40px;
+}
+.input-field label, .check-field label
+{
+    font-size: 18px;
+    color: var(--field-text-color);
+    font-weight: bold;
+    display: block;
+    margin-bottom: 20px;
+}
+.input-field label i, .check-field label i
+{
+    margin-right: 10px;
+}
+.input-field label span, .check-field label span
+{
+    color: rgb(36 147 234);
+}
+.input-field input
+{
+    font-size: 17px;
+    color: var(--field-place-color);
+    background-color: transparent;
+    border: 0;
+    border-bottom: solid 3px rgb(188 214 255);
+    width: 100%;
+    position: relative;
+    transition: .4s ease;
+}
+.input-field input+span
+{
+    display: block;
+    position: relative;
+}
+.input-field input:focus
+{
+    outline: none;
+    transition: 0.4s ease;
+}
+.input-field input+span::after
+{
+    content: "";
+    background-color: var(--secondary-color);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 3px;
+    transition: 0.4s ease;
+}
+.input-field input:focus+span::after
+{
+    width: 100%;
+}
+.input-field textarea
+{
+    height: 40px;
+}
+.check-field input[type=checkbox]
+{
+    -webkit-appearance: none;
+    border: solid 2px rgb(184, 183, 180);
+    border-radius: 6px;
+    background-color: rgb(255, 255, 255);
+    width: 22px;
+    height: 22px;
+    transition: 0.4s ease;
+    cursor: pointer;
+}
+.check-field input[type=checkbox]:checked
+{
+    background-color: rgb(36 147 234);
+    border-color: rgb(32 127 202);
+    position: relative;
+}
+.check-field input[type=checkbox]:checked::before
+{
+    content: "\f00c";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 14px;
+    width: 100%;
+    color: rgb(255, 255, 255);
+    position: absolute;
+    display: grid;
+    place-content: center;
+}
+.check-single
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.check-single label
+{
+    font-size: 16px;
+    color: var(--field-text-color);
+    margin-left: 15px;
+}
+.submit
+{
+    width: 188px;
+    height: 60px;
+    margin-top: 15px;
+}
+.submit button
+{
+    border-radius: 10px;
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    height: 100%;
+    border: solid 2px transparent;
+    transition: 0.4s ease;
+    font-size: 15px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    position: relative;
+}
+.submit button span
+{
+    margin-left: 10px;
+    display: inline-block;
+    transform: translateX(-200%);
+    opacity: 0;
+    transition: 0.4s ease;
+    position: absolute;
+}
+.submit button:hover span
+{
+    opacity: 1;
+    transform: translateX(0);
+}
+
+
+
+
+
+
+
+
+.left-shape, .right-shape
+{
+    position: absolute;
+    top: 0;
+}
+.left-shape
+{
+    left: 0;
+}
+.right-shape
+{
+    right: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.thankyou-page .logo
+{
+    justify-content: center;
+    margin-top: 60px;
+}
+.thankyou-page .logo-icon
+{
+    width: 55px;
+    margin-right: 10px;
+}
+.thankyou-page .logo .logo-icon img
+{
+    width: 100%;
+}
+.thankyou-page .logo-text
+{
+    font-size: 65px;
+}
+.thankyou-page .main-inner
+{
+    background-image: url(../images/thankyou-bg.png) !important;
+    background-color: var(--text-color-hover);
+
+}
+.thankyou-page article
+{
+    text-align: center;
+    margin-top: 80px;
+}
+.thankyou-page article h1
+{
+    font-size: 75px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.thankyou-page article h1 span
+{
+    display: block;
+    font-size: 80px;
+    font-weight: 900;
+    color: var(--primary-color);
+}
+.thankyou-page article span
+{
+    font-size: 20px;
+    color: var(--primary-color);
+    font-weight: 500;
+}
+.thankyou-page article p
+{
+    font-size: 18px;
+    font-family: "Myriad Pro";
+    color: var(--secondary--text-color);
+    margin: 0 auto;
+    margin-top: 45px;
+    width: 39%;
+}
+.social-media
+{
+    text-align: center;
+    margin: 40px auto;
+    background-color: var(--text-color-hover);
+    width: 30%;
+    padding: 6px 10px;
+}
+.social-media a
+{
+    border: solid 1px rgb(244, 244, 244);
+    border-radius: 5px;
+    background-color: transparent;
+    color: var(--secondary--text-color);
+    font-size: 18px;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 20px;
+}
+.social-media a i
+{
+    margin-right: 10px;
+    font-size: 20px;
+}
+.back-home
+{
+    width: 188px;
+    height: 63px;
+    margin: 0 auto;
+}
+.back-home a
+{
+    background-color: var(--primary-color);
+    border-radius: 50px;
+    color: var(--text-color-hover);
+    width: 100%;
+    height: 100%;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    line-height: 63px;
+    font-size: 17px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    border: 0;
+
+}
+
+#sub img
+{
+    width: 60px;
+}
+
+.highlight
+{
+    border-top: solid 3px var(--primary-color) !important;
+    border-bottom: solid 3px var(--primary-color) !important;
+
+}
+
+
+#error
+{
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 20;
+}
+
+
+.invalid
+{
+    border-bottom: solid 3px #ff4444 !important;
+    position: relative;
+}
+
+/*L-desktop*/
+
+@media (min-device-width:  1600px)
+{
+
+}
+
+/*L-laptops*/
+@media(max-width: 1440px)
+{
+
+
+
+
+}
+
+/*laptops/tablets*/
+@media(max-width: 1024px)
+{
+    .tab-100
+    {
+        width: 100%;
+    }
+    .tab-50
+    {
+        width: 50%;
+    }
+    .tab-33
+    {
+        width: 33.333333%;
+        margin-bottom: 15px;
+    }
+    main
+    {
+        padding: 45px 40px;
+    }
+    .side-text h2
+    {
+        font-size: 45px;
+    }
+    .side-text p
+    {
+        font-size: 24px;
+        line-height: 35px;
+    }
+
+
+
+
+
+
+
+
+    .thankyou-page article p
+    {
+        width: 80%;
+    }
+    .social-media
+    {
+        width: 65%;
+    }
+    .thankyou-page article h1
+    {
+        font-size: 60px;
+    }
+    .thankyou-page article h1 span
+    {
+        font-size: 65px;
+    }
+    .thankyou-page article span
+    {
+        font-size: 18px;
+    }
+    .step-bar-inner
+    {
+        width: 50%;
+    }
+}
+
+
+/*tablets*/
+@media (max-width: 768px)
+{
+    .tab-sm-100
+    {
+        width: 100%;
+    }
+    .tab-sm-50
+    {
+        width: 50%;
+    }
+    .left
+    {
+        order: 2;
+    }
+    .right
+    {
+        margin-right: 10%;
+        margin-top: 40px;
+    }
+
+
+
+
+
+
+    .social-media
+    {
+        width: 85%;
+    }
+    .c-order
+    {
+        order: 2;
+    }
+}
+
+
+/*Smart phone*/
+@media(max-width: 576px)
+{
+    .mob-100
+    {
+        width: 100%;
+    }
+    .mob-50
+    {
+        width: 50%;
+    }
+    main
+    {
+        padding: 20px;
+    }
+    .side-text h2
+    {
+        font-size: 34px;
+    }
+    .side-text p
+    {
+        font-size: 18px;
+    }
+    .right
+    {
+        margin-top: 40px;
+    }
+    .c-order
+    {
+        order: 2;
+    }
+
+
+    .thankyou-page article h1
+    {
+        font-size: 30px;
+    }
+    .thankyou-page article h1 span
+    {
+        font-size: 35px;
+    }
+    .thankyou-page article span
+    {
+        font-size: 15px;
+    }
+    .thankyou-page article p
+    {
+        font-size: 15px;
+        width: 90%;
+    }
+    .thankyou-page .logo-text
+    {
+        font-size: 60px;
+    }
+    .social-media
+    {
+        width: 100%;
+    }
+
+
+
+}
+.pop
+{
+    animation: pop 0.3s linear forwards;
+
+}
+@keyframes pop {
+    25%
+    {
+        transform: scale(1.2);
+    }
+
+    100%
+    {
+        transform: scale(1.0);
+    }
+}
+.reveal
+{
+    animation: reveal 3s linear 1;
+}
+@keyframes reveal {
+    0%
+    {
+        opacity: 1;
+        display: block;
+    }
+    30%
+    {
+        opacity: 1;
+        display: block;
+    }
+    60%
+    {
+        opacity: 0.7;
+        display: block;
+    }
+    90%
+    {
+        opacity: 0.3;
+        display: block;
+    }
+    100%
+    {
+        opacity: 0;
+
+    }
+}
+
+
+.lightSpeedIn
+{
+    animation: lightSpeedIn 0.7s ease-in forwards;
+}
+.lightSpeedOut
+{
+    animation: lightSpeedOut 0.7s ease-out forwards;
+}
+
+
+
+@keyframes lightSpeedIn {
+    0% {
+        -webkit-transform: translateX(100%) skewX(-30deg);
+        opacity: 0;
+    }
+    60% {
+        -webkit-transform: translateX(-20%) skewX(30deg);
+        opacity: 1;
+    }
+    80% {
+        -webkit-transform: translateX(0%) skewX(-15deg);
+        opacity: 1;
+    }
+    100% {
+        -webkit-transform: translateX(0%) skewX(0deg);
+        opacity: 1;
+    }
+}
+
+@keyframes lightSpeedOut {
+    100% {
+        -webkit-transform: translateX(100%) skewX(-30deg);
+        opacity: 0;
+    }
+    80% {
+        -webkit-transform: translateX(-20%) skewX(30deg);
+        opacity: 1;
+    }
+    60% {
+        -webkit-transform: translateX(0%) skewX(-15deg);
+        opacity: 1;
+    }
+    0% {
+        -webkit-transform: translateX(0%) skewX(0deg);
+        opacity: 1;
+    }
+}
+
+/* variables */
+:root
+{
+    --secondary-color: rgb(23, 62, 101);
+
+}

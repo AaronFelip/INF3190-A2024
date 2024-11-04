@@ -9,12 +9,13 @@ Ce dépot contient les corrections des labos du groupe 40, n'hésitez pas à le 
 - Semaine 4: [Labo3 - CSS de base](./LABO3)
 - Semaine 5: [Labo4 - CSS partie 2](./LABO4)
 - Semaine 6: [Labo5 - Formulaire](./LABO5)
-- Semaine 7: à venir
-- Semaine 8: à venir
-- Semaine 9: à venir
-- Semaine 10: à venir
-- Semaine 11: à venir
-- Semaine 12: à venir
+- Semaine 7: Pas de labo cette semaine
+- Semaine 8: [Labo6 - Javascript partie 1](./LABO6)
+- Semaine 9: [Labo7 - Javascript partie 2](./LABO7)
+- Semaine 9: [Labo7 - Javascript partie 2 - ma version](./LABO7-v2)
+- Semaine 10: [Labo8 - Introduction à Python](./LABO8)
+- Semaine 11: Flask partie 1
+- Semaine 12: Flask partie 2
 - Semaine 13: à venir
 - Semaine 14: à venir
 - Semaine 15: à venir

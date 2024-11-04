@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+
+<h1>Validation de formulaire</h1>
+
+<form id="formulaire" action="/submit" method="post">
+	<p id="erreur-global"></p>
+	<label for="nom">Nom :</label>
+	<input type="text" id="nom">
+	<br>
+	<label for="prenom">Prenom :</label>
+	<input type="text" id="prenom">
+	<br>
+	<label for="date">Date de naissance :</label>
+	<input type="text" id="date">
+	<span id="erreur-date"></span>
+	<br>
+	<label for="code">Code permanent :</label>
+	<input type="text" id="code">
+	<span id="erreur-code"></span>
+	<br>
+	<label for="genre">Genre :</label>
+	<input type="text" id="genre">
+	<span id="erreur-genre"></span>
+	<br>
+	<p id="erreur-champs-vides"></p>
+</form>
+<button onclick="valider()">Soumettre</button>
+
+</body>
+<script src="static/js/script.js"></script>
+</html>

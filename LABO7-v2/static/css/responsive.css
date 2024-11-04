@@ -1,0 +1,188 @@
+/*L-desktop*/
+
+@media (min-device-width:  1600px)
+{
+
+}
+
+/*L-laptops*/
+@media(max-width: 1440px)
+{
+
+
+
+
+}
+
+/*laptops/tablets*/
+@media(max-width: 1024px)
+{
+    .tab-100
+    {
+        width: 100%;
+    }
+    .tab-50
+    {
+        width: 50%;
+    }
+    .tab-33
+    {
+        width: 33.333333%;
+        margin-bottom: 15px;
+    }
+    main
+    {
+        padding: 45px 40px;
+    }
+    .side-text h2
+    {
+        font-size: 45px;
+    }
+    .side-text p
+    {
+        font-size: 24px;
+        line-height: 35px;
+    }
+
+
+
+
+
+
+
+
+    .thankyou-page article p
+    {
+        width: 80%;
+    }
+    .social-media
+    {
+        width: 65%;
+    }
+    .thankyou-page article h1
+    {
+        font-size: 60px;
+    }
+    .thankyou-page article h1 span
+    {
+        font-size: 65px;
+    }
+    .thankyou-page article span
+    {
+        font-size: 18px;
+    }
+    .step-bar-inner
+    {
+        width: 50%;
+    }
+}
+
+
+/*tablets*/
+@media (max-width: 768px)
+{
+    .tab-sm-100
+    {
+        width: 100%;
+    }
+    .tab-sm-50
+    {
+        width: 50%;
+    }
+    .left
+    {
+        order: 2;
+    }
+    .right
+    {
+        margin-right: 10%;
+        margin-top: 40px;
+    }
+
+
+
+
+
+
+    .social-media
+    {
+        width: 85%;
+    }
+    .c-order
+    {
+        order: 2;
+    }
+}
+
+
+/*Smart phone*/
+@media(max-width: 576px)
+{
+    .mob-100
+    {
+        width: 100%;
+    }
+    .mob-50
+    {
+        width: 50%;
+    }
+    main
+    {
+        padding: 20px;
+    }
+    .side-text h2
+    {
+        font-size: 34px;
+    }
+    .side-text p
+    {
+        font-size: 18px;
+    }
+    .right
+    {
+        margin-top: 40px;
+    }
+    .c-order
+    {
+        order: 2;
+    }
+
+
+
+
+
+
+
+
+
+
+    .thankyou-page article h1
+    {
+        font-size: 30px;
+    }
+    .thankyou-page article h1 span
+    {
+        font-size: 35px;
+    }
+    .thankyou-page article span
+    {
+        font-size: 15px;
+    }
+    .thankyou-page article p
+    {
+        font-size: 15px;
+        width: 90%;
+    }
+    .thankyou-page .logo-text
+    {
+        font-size: 60px;
+    }
+    .social-media
+    {
+        width: 100%;
+    }
+
+
+
+}
+
